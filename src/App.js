@@ -3,13 +3,19 @@ import axios from "axios";
 
 class App extends React.Component {
   state = {
-    isLoading: true
+    isLoading: true,
+    movies: []
+  }
+
+  getMovie = async () => {
+    const movies = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating");
+    console.log(movies);
+
+    this.setState({ movies, isLoading: false });
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, 6000)
+    this.getMovie();
   }
 
   render() {
