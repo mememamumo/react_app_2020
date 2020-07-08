@@ -1,17 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Movie.css";
 
 function Movie({ year, genres, title, summary, poster}) {
 	return (
 		<div className="movie">
 			<img src={poster} alt={title} title={title} />
 			<div className="movie__data">
-				<h3 className="movie__title">{title}</h3>
-				<h5 className="movie__year">{year}</h5>
+				<h3 className="movie__title">
+					{title}
+					<span className="movie__year">{year}</span>
+				</h3>
 				<ul className="movie__genres">
 					{genres.map((gen, index) => <li key={index} className="genres__genre">{gen}</li>)}
 				</ul>
-				<p className="movie__summary">{summary}</p>
+				{/* <div className="movie__rating">{rating} / 10</div> */}
+				<div className="movie__summary">
+					<p className="ell">{summary}</p>
+				</div>
+				<div className="movie__user">
+					<h4 className="user__image"> </h4>
+					<span className="user__name">Uploaded by User__Name</span>
+				</div>
 			</div>
 		</div>
 	);
