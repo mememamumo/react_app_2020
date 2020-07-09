@@ -50,12 +50,13 @@
 
 .movie img {
 	position: absolute;
-	top: -35px;
+	top: -23px;
 	max-width: 120px;
 	margin-right: 20px;
 	box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 	border-radius: 2px;
 	overflow: hidden;
+	border: 4px solid #fff;
 }
 
 .movie .movie__data {
