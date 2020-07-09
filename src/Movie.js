@@ -16,7 +16,7 @@ function Movie({ year, genres, title, summary, poster}) {
 				</ul>
 				{/* <div className="movie__rating">{rating} / 10</div> */}
 				<div className="movie__summary">
-					<p className="ell">{summary}</p>
+					<p className="ell">{summary.slice(0, 100)}...</p>
 				</div>
 				<div className="movie__user">
 					<h4 className="user__image"> </h4>
