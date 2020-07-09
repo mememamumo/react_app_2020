@@ -109,6 +109,10 @@
 	padding: 10px 0;
 }
 
+.ell {
+	line-height: 1.4;
+}
+
 .movie__user {
 	border-top: 1px solid #e5e7f4;
 	padding: 10px 0 0;
