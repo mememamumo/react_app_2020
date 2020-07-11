@@ -1,10 +1,3 @@
-body {
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(90deg, rgba(224,231,253,1) 45%, rgba(200,248,254,1) 100%);
-	/* background-color: #ebeff4; */
-}
-
 .container {
 	width: 100%;
 	height: 100vh;
@@ -97,5 +90,5 @@ body {
   color: #ffffff;
   font-size: 20vh;
   transform: rotate(-90deg);
-  z-index: 0;
+  z-index: -1;
 }
