@@ -82,13 +82,3 @@
   left: 50%;
   margin: -15px 0 -15px;
 }
-
-.title {
-  position: fixed;
-  top: 40%;
-  left: -550px;
-  color: #ffffff;
-  font-size: 20vh;
-  transform: rotate(-90deg);
-  z-index: -1;
-}

@@ -31,7 +31,6 @@ class Home extends React.Component {
           )
           : (
             <div className="wrapper">
-              <h1 className="title">React Movies</h1>
               <div className="movies">
                 {movies.map(movie => (
                   <Movie 

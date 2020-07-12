@@ -1,28 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./Movie.css";
 
-function Movie({ year, genres, title, summary, poster}) {
+function Movie({ id, year, genres, title, summary, poster}) {
 	return (
 		<div className="movie">
-			<img src={poster} alt={title} title={title} />
-			<div className="movie__data">
-				<h3 className="movie__title">
-					{title}
-					<span className="movie__year">{year}</span>
-				</h3>
-				<ul className="movie__genres">
-					{genres.map((gen, index) => <li key={index} className="genres__genre">{gen}</li>)}
-				</ul>
-				{/* <div className="movie__rating">{rating} / 10</div> */}
-				<div className="movie__summary">
-					<p className="ell">{summary.slice(0, 100)}...</p>
+			<Link
+				to={{
+					pathname: `/movie/${id}`,
+					state: {
+						year,
+						title,
+						summary,
+						poster,
+						genres
+					}
+				}}
+			>
+				<img src={poster} alt={title} title={title} />
+				<div className="movie__data">
+					<h3 className="movie__title">
+						{title}
+						<span className="movie__year">{year}</span>
+					</h3>
+					<ul className="movie__genres">
+						{genres.map((gen, index) => <li key={index} className="genres__genre">{gen}</li>)}
+					</ul>
+					<div className="movie__summary">
+						<p className="ell">{summary.slice(0, 100)}...</p>
+					</div>
 				</div>
-				<div className="movie__user">
-					<h4 className="user__image"> </h4>
-					<span className="user__name">Uploaded by User__Name</span>
-				</div>
-			</div>
+			</Link>
 		</div>
 	);
 }

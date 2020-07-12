@@ -1,8 +1,9 @@
 import React from "react";
 
-function About() {
+function About(props) {
+	console.log(props);
 	return (
-		<div>This page is About.js.</div>
+			<div>about!</div>
 	);
 }
 
