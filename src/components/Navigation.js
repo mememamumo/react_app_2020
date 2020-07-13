@@ -9,7 +9,7 @@ function Navigation() {
 			<div className="nav">
 				<Link to="/">home</Link>
 				<Link to="/about">about</Link>
-				<a href="https://github.com/mememamumo/react_app_2020" target="_blank">github</a>
+				<a href="https://github.com/mememamumo/react_app_2020" target="_blank" rel="noopener noreferrer">github</a>
 			</div>
 		</header>
 	);
