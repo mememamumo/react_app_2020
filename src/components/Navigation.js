@@ -4,10 +4,13 @@ import "./Navigation.css";
 
 function Navigation() {
 	return (
-		<div className="nav">
-			<Link to="/">home</Link>
-			<Link to="/about">about</Link>
-		</div>
+		<header className="header">
+			<div className="title">React Movie App 2020</div>
+			<div className="nav">
+				<Link to="/">home</Link>
+				<Link to="/about">about</Link>
+			</div>
+		</header>
 	);
 }
 
