@@ -5,7 +5,7 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	padding: 200px 30px 50px;
+	padding: 240px 30px 50px;
 	margin: auto;
 	width: 100%;
 	overflow-y: scroll;
@@ -53,6 +53,7 @@
 
 .movies .movie a:hover .movie__title {
 	color: #6cd9ee;
+	transition: all 0.275s ease-in-out;
 }
 
 .movie img {
@@ -64,6 +65,11 @@
 	border-radius: 2px;
 	overflow: hidden;
 	border: 4px solid #fff;
+}
+
+.movie:hover img {
+	top: -10px;
+	transition: all 0.275s ease-in-out;
 }
 
 .movie .movie__data {

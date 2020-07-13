@@ -11,7 +11,8 @@
 .header .title {
 	color: #444;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 48px;
+	cursor: grab;
 }
 
 .header .title::before {
@@ -31,7 +32,7 @@
 	color: #444;
 	font-weight: bold;
 	font-size: 24px;
-	margin-right: 10px;
+	margin-right: 16px;
 }
 
 .nav a::before {
@@ -41,4 +42,63 @@
 
 .nav a:hover {
 	color: #6cd9ee;
+	transition: all 0.275s ease-in-out;
 }
+
+/* effect */
+.header .title {
+  cursor: grab;
+  -webkit-animation: twinkle 0.8572 2 ease;
+          animation: twinkle 0.8572 2 ease;
+}
+.header .title:hover {
+  -webkit-animation: twinkle 1.2858s infinite ease;
+          animation: twinkle 1.2858s infinite ease;
+}
+@-webkit-keyframes twinkle {
+  0% {
+    text-shadow: 0 0 0 #fff;
+  }
+  40% {
+    text-shadow: 3px 0 0 yellow;
+  }
+  43% {
+    text-shadow: 3px 0 0 yellow, 15px 0 0 #b8c8fd, -7px 0 0 #6cd9ee;
+    color: #f1f1f1;
+  }
+  44% {
+    text-shadow: 3px 0 0 yellow, 15px 2px 0 #b8c8fd, -7px -1.5px 0 #6cd9ee;
+    color: rgba(0, 0, 0, 0.2);
+  }
+  45% {
+    text-shadow: 3px 0 0 yellow, 15px 0 0 #b8c8fd, -7px 0 0 #6cd9ee;
+    color: #f1f1f1;
+  }
+  100% {
+    text-shadow: 0 0 0 #fff;
+  }
+}
+@keyframes twinkle {
+  0% {
+    text-shadow: 0 0 0 #fff;
+  }
+  40% {
+    text-shadow: 3px 0 0 yellow;
+  }
+  43% {
+    text-shadow: 3px 0 0 yellow, 15px 0 0 #b8c8fd, -7px 0 0 #6cd9ee;
+    color: #f1f1f1;
+  }
+  44% {
+    text-shadow: 3px 0 0 yellow, 15px 2px 0 #b8c8fd, -7px -1.5px 0 #6cd9ee;
+    color: rgba(0, 0, 0, 0.2);
+  }
+  45% {
+    text-shadow: 3px 0 0 yellow, 15px 0 0 #b8c8fd, -7px 0 0 #6cd9ee;
+    color: #f1f1f1;
+  }
+  100% {
+    text-shadow: 0 0 0 #fff;
+  }
+}
+

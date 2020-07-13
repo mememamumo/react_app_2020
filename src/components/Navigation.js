@@ -5,10 +5,11 @@ import "./Navigation.css";
 function Navigation() {
 	return (
 		<header className="header">
-			<div className="title">React Movie App 2020</div>
+			<Link className="title" to="/">React Movie App 2020</Link>
 			<div className="nav">
 				<Link to="/">home</Link>
 				<Link to="/about">about</Link>
+				<a href="https://github.com/mememamumo/react_app_2020" target="_blank">github</a>
 			</div>
 		</header>
 	);
