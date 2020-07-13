@@ -30,8 +30,7 @@ class Home extends React.Component {
             <div className="loading__spinner"></div>
           )
           : (
-            <div className="wrapper">
-              <div className="movies">
+            <div className="movies">
                 {movies.map(movie => (
                   <Movie 
                     key={movie.id}
@@ -41,10 +40,10 @@ class Home extends React.Component {
                     title={movie.title}
                     summary={movie.summary}
                     poster={movie.medium_cover_image}
+                    largePoster={movie.large_cover_image}
                   />
                 ))}
               </div>
-            </div>  
           )
         }
       </section>
